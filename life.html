@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-image: linear-gradient(to left, black,#333);
+            
+        }
+        nav{
+            background-color: #333;
+            height: 76px;
+        }
+        nav ul{
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+        nav li{
+            float: left;
+        }
+        nav li a{
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            line-height: 2;
+        }
+        nav li a:hover, #dropbutton a:hover{
+            color: white;
+            background-color: red;
+        }
+        #dropbutton{
+            background-color: white;
+            position: absolute;
+            z-index: 1;
+            display: none;
+            width: 142.72px;
+        }
+        #dropbutton a{
+            color: #333;
+            display: block;
+        }
+        #dropdown:hover #dropbutton{
+            display: block;
+        }
+        #jv{
+            padding: 14px 0px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">HOME</a>
+            </li>
+
+            <li>
+                <a href="https://www.youtube.com/">YOUTUBE</a>
+            </li>
+
+            <li id="dropdown">
+                <a href="">COURSOS</a>
+                <div id="dropbutton">
+                    <a href="https://www.youtube.com/watch?v=Wn3bVMLYHhs&list=PLMTdZ61eBnyrnapIyOphXAkIcR5DDOGkz">HTML5</a>
+                    <a href="https://www.youtube.com/watch?v=eN8JBvxdwME&list=PLMTdZ61eBnyoxjc9Prw0uhwgp6YZ2-_sg">CSS3</a>
+                    <a href="https://www.youtube.com/watch?v=g6tuPUqc3ew&list=PLMTdZ61eBnyp1nMM8mGRzpwuu6FNxFy0D" id="jv">JAVASCRIPT</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    
+    
+</body>
+</html>

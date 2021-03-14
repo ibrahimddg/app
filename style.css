@@ -1,0 +1,274 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    width: 100%;
+}
+header{
+    height: 100px;
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(126, 13, 13) , rgb(230, 44, 44));
+}
+#logobox{
+    width: 30%;
+    height: 100%;
+    float: right;
+    background-color: #fafafa;
+}
+#h1h1{
+    float: left;
+    line-height: 100px;
+    padding: 0 80px;
+    font-family: 'Tajawal', sans-serif!important;
+    font-size:25px;
+}
+
+#imgimg{
+    height: 130px;
+}
+header a{
+    color: black;
+}
+nav{
+    width: 70%;
+    text-align: center;
+    
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+}
+nav li{
+    display: inline-block;
+    line-height: 100px;
+    width: 330px;
+    text-align: center;
+}
+nav a:hover{
+    background-color: white;
+    color: black;
+    width: 100%;
+    height: 100%;
+    
+    }
+
+main{
+    width: 100%;
+    height: 600px;
+    background-color: rgb(255, 80, 80);
+    border-top:3px solid white;
+    animation-name: projectlable;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+aside{
+    width: 30%;
+    height: 100%;
+    background-color: #ffffff;
+    text-align: center;
+    float: left;
+}
+aside img{
+    width: 90%;
+    padding: 20px;
+}
+#hh1{
+    padding: 20px 0;
+    border-bottom: 3px solid rgb(226, 84, 84);
+}
+#article{
+    float: right;
+    width: 70%;
+    height: 600px;
+    position: relative;
+    text-align: center;
+}
+#box{
+    padding: 15px;
+    text-align: center;
+    position: absolute;
+    width: 700px;
+    height: 250px;
+    background-color: #ffffff;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+}
+#box h1{
+    border-bottom: 3px solid red;
+    padding: 15px 0;
+}
+#box p{
+    font-family: 'Cairo', sans-serif;
+    text-align: justify;
+}
+#icon{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top:10px ;
+    
+}
+#icon img{
+    width: 45px;
+    border-bottom: 2px double rgb(107, 106, 106);
+    padding-bottom: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+    
+}
+#icon img:hover{
+   width: 55px;
+   border-bottom: 2px solid red;
+}
+@keyframes projectlable{
+    0%{
+        background-color: rgb(255, 181, 181);
+    }
+    25%{
+        background-color: rgb(211, 106, 106);
+    }
+    50%{
+        background-color: rgb(255, 80, 80);
+    }
+    75%{
+        background-color: rgb(138, 35, 35);
+    }
+    100%{
+        background-color: rgb(255, 181, 181);
+    }
+    
+}
+#imgimg{
+    float: right;
+}
+
+
+@media only screen and (min-width:1430px) and (max-width:1440px){
+    nav li {
+      width: 325px;
+    }
+}
+@media only screen and (min-width:1388px) and (max-width:1430px){
+    nav li{
+        width: 300px;
+    }
+}
+@media only screen and (min-width:1030px) and (max-width:1388px){
+ 
+    #logobox{
+        width: 41%;
+    }
+}
+@media only screen and (min-width:1145px) and (max-width:1388px){
+    nav li{
+        width: 217px;
+    }
+}
+@media only screen and (min-width:1030px) and (max-width:1145px){
+
+    nav li{
+        width: 195px;
+    }
+    #box{
+        width: 600px;
+    }
+}
+@media only screen and (min-width:969px) and (max-width:1029px){
+
+    #logobox{
+        width: 44%;
+    }
+    nav li{
+        width: 173px;
+    }
+    #box{
+        width: 500px;
+    }
+}
+@media only screen and  (max-width:968px){
+   header,main{
+       height: auto;
+   }
+   #logobox{
+       width: 100%;
+       text-align: center;
+   }
+   #h1h1{
+       float: none;
+       
+   }
+   #imgimg{
+       float: none;
+       width: 200px;
+       height:200px ;
+       padding: none;
+   }
+   span a{
+       text-decoration: none;
+   }
+   nav{
+       width: 100%;
+      
+   }
+   aside{
+       width: 100%;
+   }
+   #article{
+       height: 300px;
+       width: 100%;
+       background-color: #fafafa;
+   }
+   nav li{
+       width: 271px;
+   }
+
+}   
+@media only screen and  (max-width:842px){
+   
+    nav li{
+        display: inline-block;
+        width: 100%;
+    }
+    
+}
+@media only screen and  (max-width:747px){
+   
+    #box{
+       width: 500px;
+    }
+}
+@media only screen and  (max-width:547px){
+    #box{
+        width: 400px;
+     }
+}
+@media only screen and  (max-width:500px){
+
+    #box{
+        width: 270px;
+     }
+}
+@media only screen and(orientation:landscape){
+
+}
+@media print{
+    #box{
+        width: 200px;
+    }
+    #h1h1{
+        width: 300px;
+    }
+   nav {
+       display: none;
+   }
+
+}
+
+
+
+	
